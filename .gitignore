@@ -1,0 +1,14 @@
+### test ###
+file_test
+############
+
+### valgrind ###
+valgrind.log
+################
+
+### bin ###
+*.a
+*.o
+my_sokoban
+###########
+

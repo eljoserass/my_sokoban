@@ -23,8 +23,10 @@ int do_game_loop(game_t *game, move_t *move)
         print_game(game);
         get_event(game);
         status = refresh_game(game, move);
-        if (game->input == ESC)
+        if (game->input == ESC) {
+            status = 0;
             return (end_game(status, game));
+        }
     }
     return (end_game(status, game));
 }
